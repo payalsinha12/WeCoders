@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCoders Blog</title>
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">WeCoders</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contest.html">Contests</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+            <a href="login.html"><button class="login-btn">Login</a> </button>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>WeCoders Blog</h1>
+                <p>Your source for coding tips, industry trends, and <span style="background-color: rgb(0, 94, 255)"> developer experiences.</span></p>
+                <p>Listening, Testing, Coding, Designing. That’s all there is to software. Anyone who tells you different is selling something.</p>
+                <div class="underline"></div>
+            </div>
+        </div>
+        <div class="blog-section">
+            <div class="blog-container">
+                <h2>Popular Blogs</h2>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <img src="images/stackoverflow.png" alt="Blog Image">
+                        <h3><a href="https://stackoverflow.blog/">Stack Overflow Blog</a></h3>
+                        <p>Focus: Coding tips, industry trends, and developer experiences.</p>
+                    </div>
+                    <div class="blog-item">
+                        <img src="images/githubblog.png" alt="Blog Image">
+                        <h3><a href="https://github.blog/">GitHub Blog</a></h3>
+                        <p>Focus: Updates on GitHub, open-source projects, and development best practices.</p>
+                    </div>
+                    <div class="blog-item">
+                        <img src="images/medium.png" alt="Blog Image">
+                        <h3><a href="https://medium.com/topic/programming">Medium (Programming)</a></h3>
+                        <p>Focus: Articles on various programming languages, tools, and development techniques.</p>
+                    </div>
+                    <div class="blog-item">
+                        <img src="images/datascience.png" alt="Blog Image">
+                        <h3><a href="https://towardsdatascience.com/">Towards Data Science</a></h3>
+                        <p>Focus: Data science, machine learning, and AI.</p>
+                    </div>
+                    <div class="blog-item">
+                        <img src="images/hackernoon.png" alt="Blog Image">
+                        <h3><a href="https://hackernoon.com/">Hacker Noon</a></h3>
+                        <p>Focus: Technology, programming, and startup stories.</p>
+                    </div>
+                    <div class="blog-item">
+                        <img src="images/python.png" alt="Blog Image">
+                        <h3><a href="https://realpython.com/">Real Python</a></h3>
+                        <p>Focus: Python tutorials, tips, and best practices.</p>
+                    </div>
+                    <button class="load-more-btn">Load More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+  <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="images/1-removebg-preview (1).png" alt="WeCoders Logo">
+                <p>WeCoders</p>
+            </div>
+            <p>Explore upcoming coding contests.</p>
+        </div>
+        <div class="footer-middle">
+            <h4>Competitions</h4>
+            <ul>
+                <li><a href="contest.html">Contests</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+            <h4>Opportunities</h4>
+            <ul>
+                <li><a href="hackathon.html">Hackathons</a></li>
+                <li><a href="Internships.html">Internships</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About WeCoders</a></li>
+            </ul>
+            <h4>Social</h4>
+            <div class="footer-social-icons">
+                <a href="https://www.linkedin.com/in/payal-sinha-b83126279/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/payalsinha12" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="discord://payalsinha01" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/paya.lsinha01/?next=%2F&hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 WeCoders licensed.</p>
+    </div>
+</footer>
+
+    <script>
+        document.querySelector('.load-more-btn').addEventListener('click', function() {
+            const blogList = document.querySelector('.blog-list');
+            const blogs = [
+                {
+                    img: 'images/codewars.png',
+                    title: 'Codewars Blog',
+                    link: 'https://blog.codewars.com/',
+                    description: 'Focus: Coding challenges, programming strategies, and user stories.'
+                },
+                {
+                    img: 'images/of.png',
+                    title: 'The Overflow Blog',
+                    link: 'https://stackoverflow.blog/',
+                    description: 'Focus: Insights on software development and industry trends.'
+                },
+                {
+                    img: 'images/scotch.png',
+                    title: 'Scotch.io',
+                    link: 'https://scotch.io/',
+                    description: 'Focus: Web development tutorials and tips for front-end and back-end technologies.'
+                },
+                {
+                    img: 'images/alp.png',
+                    title: 'A List Apart',
+                    link: 'https://alistapart.com/',
+                    description: 'Focus: Web design, development, and standards.'
+                },
+                {
+                    img: 'images/smashing.png',
+                    title: 'Smashing Magazine',
+                    link: 'https://www.smashingmagazine.com/',
+                    description: 'Focus: Web design, UX, and development.'
+                },
+                {
+                    img: 'images/dev.png',
+                    title: 'Dev.to',
+                    link: 'https://dev.to/',
+                    description: 'Focus: Community-driven articles on programming, development, and tech culture.'
+                }
+            ];
+            blogs.forEach(blog => {
+                const blogItem = document.createElement('div');
+                blogItem.classList.add('blog-item');
+                blogItem.innerHTML = `
+                    <img src="${blog.img}" alt="Blog Image">
+                    <h3><a href="${blog.link}">${blog.title}</a></h3>
+                    <p>${blog.description}</p>
+                `;
+                blogList.insertBefore(blogItem, document.querySelector('.load-more-btn'));
+            });
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020630;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 150px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #000214;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    z-index: 1;
+    padding-bottom: 20px; /* Adding some padding below the content */
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background-color: #1e90ff;
+    margin-top: 20px;
+}
+
+.blog-section {
+    padding: 50px 0;
+    background-color: #030836;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-item h3 {
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    color: #ccc;
+}
+
+.blog-item a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.blog-item a:hover {
+    color: #fff;
+}
+
+.load-more-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.load-more-btn:hover {
+    background-color: #1c7ed6;
+}
+/* Footer styles */
+footer {
+    background-color: #000214;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    color: #f2efef;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-middle ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li, .footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: -15px;
+
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

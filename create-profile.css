@@ -1,0 +1,209 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020630;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -50px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1c7ed6;
+}
+
+/* Create Profile Section */
+.create-profile-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.create-profile-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.create-profile-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.create-profile-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 20px;
+    background-color: #020630;
+}
+
+.create-profile-content {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px; /* Width of the content box */
+    position: relative;
+    margin-bottom: 20px; /* Space between content box and button */
+}
+
+.create-profile-content::before,
+.create-profile-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #1e90ff;
+}
+
+.create-profile-content::before {
+    left: -20px; /* Adjust this value for distance from the box */
+}
+
+.create-profile-content::after {
+    right: -20px; /* Adjust this value for distance from the box */
+}
+
+.create-btn-container {
+    background-color: #fff; /* White background for button container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #000214;
+}
+
+.create-btn {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0; /* Remove top margin as it's now in its own container */
+}
+
+.create-btn:hover {
+    background-color: #1c7ed6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000214;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    color: #f2efef;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-middle ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li, .footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: -15px;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

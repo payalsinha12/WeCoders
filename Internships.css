@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020630;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 150px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.all-in-one-place {
+    background-color: #989494;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.all-in-one-place h2 {
+    margin-bottom: 1rem;
+    color: #000214;
+}
+
+.all-in-one-place .highlight {
+    color: #b43914;
+}
+
+.all-in-one-place .categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.all-in-one-place .category {
+    width: 18%;
+    margin-bottom: 1rem;
+}
+
+.all-in-one-place .category-link {
+    display: block;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.all-in-one-place .category-link:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.all-in-one-place .new-label {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.all-in-one-place .soon-label {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.internships-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.pop-out-box {
+    background-color: #08174f;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.internship-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures equal spacing between cards */
+}
+
+.internship-card {
+    background-color: #526cb2;
+    border: 1px solid #0e0e0e;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 10px); /* Adjust to fit exactly two cards per row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Space below each card */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.internship-logo {
+    width: 100px; /* Smaller size for the logo */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 15px;
+}
+
+.internship-card:hover {
+    background-color: #3f3e3e;
+}
+
+.internship-card h2 {
+    margin-top: 0;
+}
+
+.internship-card a {
+    color: #021931;
+    text-decoration: none;
+}
+
+.internship-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000214;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    color: #f2efef;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-middle ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li, .footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: -15px;
+
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

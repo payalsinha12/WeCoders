@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCoders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">WeCoders</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contest.html">Contests</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+            <a href="login.html"><button class="login-btn">Login</a> </button>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>It's the one place for all your <span class="highlight">coding platforms</span></h1>
+                <p>Talk is cheap and show me the code with WeCoders</p>
+                <a href="register.html"><button class="register-btn">Register Now</button></a>
+
+            </div>
+        </div>
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <h1>Build your <span style="background-color: rgb(0, 94, 255)">effective</span> Profile</h1>
+            <p>Showcase your ratings, GitHub stats, personal info, skills, education, and more.</p>
+            <p>Climb the leaderboard while enjoying friendly competition with friends in the coding community.</p>
+            <div class="profile-container">
+                <div class="profile-editor">
+                    <div class="editor-header">Profile Editor</div>
+                    <div class="editor-content">
+                        <div class="input-group">
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="phone" placeholder="1234567890">
+                        </div>
+                        <div class="input-group">
+                            <textarea id="text" placeholder="Your Text"></textarea>
+                        </div>
+                        <button id="updatePreview" class="create-btn">Update Preview</button>
+                    </div>
+                </div>
+                <div class="profile-preview">
+                    <div class="preview-header">Preview</div>
+                    <div class="preview-content">
+                        <h2 id="previewName">Shivans Suman</h2>
+                        <p id="previewPhone">📞1234567890</p>
+                        <p id="previewText">Hey I'm Shivans</p>
+                        <div class="social-icons">
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <hr class="divider">
+                        <div class="stats">
+                            <p class="s">Ratings</p>
+                            <p>15XX | <span class="specialization">specialist</span></p>
+                            <p class="stars">16XX | ★★★</p>
+                        </div>
+                        <hr class="divider"> <!-- Horizontal line added -->
+                        <div class="github-stats">
+                            <p class="github-title">GitHub</p>
+                            <div class="github-stats-line">
+                                <p class="pull-req">Pull-req: <span>70</span></p>
+                                <p class="issues">Issues: <span>15</span></p>
+                                <p class="commits">Commits: <span>100</span></p>
+                            </div>
+                        </div>
+                        <div class="projects">
+                            <p class="projects-title">Projects</p>
+                            <div class="project-box"></div>
+                            <div class="project-box"></div>
+                            <div class="project-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="create-profile.html"><button class="create-btn">Create Now</a></button>
+        </div>
+        <!-- Coding Platforms Section -->
+        <div class="coding-platforms-section">
+            <h1>Discover the perfect coding competition for you</h1>
+            <p>Filter contests based on various criteria and view contest details such as remaining time, duration, and more.</p>
+            <div class="platforms-container">
+                <div class="platform-box">
+                    <img src="images/leetcode.png" alt="LeetCode">
+                    <h3>LeetCode</h3>
+                    <p>Platform for honing coding skills through algorithmic challenges.</p>
+                    <a href="https://leetcode.com/" class="platform-btn">Check Out</a>
+                </div>
+                <div class="platform-box">
+                    <img src="images/codechef.png" alt="CodeChef">
+                    <h3>CodeChef</h3>
+                    <p>Platform for coding contests and programming challenges.</p>
+                    <a href="https://www.codechef.com/" class="platform-btn">Check Out</a>
+                </div>
+                <div class="platform-box">
+                    <img src="images\codeforce.png" alt="Codeforces">
+                    <h3>Codeforces</h3>
+                    <p>Platform for competitive programming contests.</p>
+                    <a href="https://codeforces.com/" class="platform-btn">Check Out</a>
+                </div>
+                <div class="platform-box">
+                    <img src="images/gfg.png" alt="GeeksforGeeks">
+                    <h3>GeeksforGeeks</h3>
+                    <p>Platform providing a variety of coding resources, tutorials, and practice problems.</p>
+                    <a href="https://www.geeksforgeeks.org/" class="platform-btn">Check Out</a>
+                </div>
+                <div class="platform-box">
+                    <img src="images/hackerrank.png" alt="HackerRank">
+                    <h3>HackerRank</h3>
+                    <p>Platform for practicing coding skills and preparing for interviews.</p>
+                    <a href="https://www.hackerrank.com/" class="platform-btn">Check Out</a>
+                </div>
+                <div class="platform-box">
+                    <img src="images/codingninjas.png" alt="Coding Ninjas">
+                    <h3>Coding Ninjas</h3>
+                    <p>Educational platform offering coding courses, challenges, and programming competitions.</p>
+                    <a href="https://www.codingninjas.com/" class="platform-btn">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </main>
+   <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="images/1-removebg-preview (1).png" alt="WeCoders Logo">
+                <p>WeCoders</p>
+            </div>
+            <p>Explore upcoming coding contests.</p>
+        </div>
+        <div class="footer-middle">
+            <h4>Competitions</h4>
+            <ul>
+                <li><a href="contest.html">Contests</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+            </ul>
+            <h4>Opportunities</h4>
+            <ul>
+                <li><a href="hackathon.html">Hackathons</a></li>
+                <li><a href="Internships.html">Internships</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Connect</h4>
+            <ul>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About WeCoders</a></li>
+            </ul>
+            <h4>Social</h4>
+            <div class="footer-social-icons">
+                <a href="https://www.linkedin.com/in/payal-sinha-b83126279/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/payalsinha12" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="discord://payalsinha01" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/paya.lsinha01/?next=%2F&hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 WeCoders licensed.</p>
+    </div>
+</footer>
+
+    <script>
+        document.getElementById('updatePreview').addEventListener('click', function() {
+            // Get values from input fields
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const text = document.getElementById('text').value;
+
+            // Update preview elements with new values
+            document.getElementById('previewName').innerText = name;
+            document.getElementById('previewPhone').innerText = '📞' + phone;
+            document.getElementById('previewText').innerText = text;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #020630;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 150px;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    z-index: 1;
+    
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero .highlight {
+    background-color: #1e90ff;
+    padding: 0 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    
+}
+
+.register-btn {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.profile-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #3b4499;
+}
+
+.profile-editor,
+.profile-preview {
+    background-color: #19196a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px; /* Ensure both sections have the same width */
+    height: 460px; /* Ensure both sections have the same height */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.editor-header,
+.preview-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: #030a4a;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5d5c5c;
+    color: #fff;
+}
+
+.input-group textarea {
+    height: 100px;
+}
+
+.preview-content {
+    text-align: center;
+}
+
+.preview-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.preview-content p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons .fa-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icons .fa-instagram {
+    color: #e4405f; /* Instagram pink */
+}
+
+.social-icons .fa-github {
+    color: #5b5757; /* GitHub gray */
+}
+
+/* Optional: Add hover effect */
+.social-icons i:hover {
+    opacity: 0.8;
+}
+
+.stats {
+    color: #fff; /* Ensure text is white for better visibility */
+}
+
+.stats p {
+
+    color: #edf0f4;
+    margin-top: -10pxpx;
+    margin-bottom: 6px;
+}
+
+.stats s {
+    color: #5c7997;
+}
+
+.stats .ratings {
+    color: #1e90ff; /* Bright blue for ratings */
+    font-weight: bold;
+}
+
+.stats .specialization {
+    color: #6296e4; /* Light blue for specialization */
+    font-weight: bold;
+}
+
+.stats .stars {
+    color: #e9d357; /* Gold color for stars */
+}
+
+.github-stats {
+    color: #edf0f4; /* Ensure text is white for better visibility */
+    margin-top: 10px;
+}
+
+.github-stats-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github-stats-line p {
+    margin-top: -6px;
+    padding: 0 10px;
+}
+
+.github-stats .pull-req {
+    color: #9d9998; 
+    /* Orange for pull requests */
+    margin-left: 70px;
+}
+
+.github-stats .issues {
+    color: #9d9998; /* Green for issues */
+    margin-left: 10px;
+}
+
+.github-stats .commits {
+    color: #9d9998; /* Blue for commits */
+    margin-right: 70px;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #444;
+    margin: 20px 0;
+}
+
+.projects {
+    margin-top: 20px;
+    color: #fff; /* Ensure text is white for better visibility */
+}
+
+.projects p {
+    margin: 5px 0; /* Adds spacing between lines */
+}
+
+.projects .projects-title {
+    color: #f1f3f6; /* Bright blue for projects title */
+    margin-top: -20px;
+}
+
+.project-box {
+    width: 40px;
+    height: 30px;
+    background-color: #5f5c5c;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.project-box:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+}
+
+.create-btn {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.create-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.coding-platforms-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.coding-platforms-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.coding-platforms-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.explore-btn {
+    padding: 15px 30px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #1c7ed6;
+}
+
+.platforms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.platform-box {
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.platform-box img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.platform-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.platform-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.platform-btn {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.platform-btn:hover {
+    background-color: #1c7ed6;
+}
+/* Footer styles */
+footer {
+    background-color: #000214;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    color: #f2efef;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-middle ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li, .footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-middle ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #f1eeee;
+}
+
+.footer-social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: -15px;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
