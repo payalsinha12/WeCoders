@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -53,7 +54,6 @@ body {
 .login-btn:hover {
     background-color: #1c7ed6;
 }
-
 
 .register-section {
     display: flex;
@@ -203,4 +203,127 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 50px;
+    }
+
+    .register-container {
+        flex-direction: column;
+    }
+
+    .register-image {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .register-form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .register-section {
+        padding: 20px;
+    }
+
+    .register-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .register-image {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+
+    .register-form {
+        padding: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .register-section {
+        padding: 10px;
+    }
+
+    .register-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .register-image {
+        height: 100px; /* Adjust height for smaller screens */
+    }
+
+    .register-form {
+        padding: 10px;
+    }
+
+    .register-form h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .register-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
 }

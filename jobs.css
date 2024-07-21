@@ -22,7 +22,7 @@ body {
 .navbar ul {
     list-style: none;
     padding: 0;
-    margin-left: 150px;
+    margin-left: auto;
     display: flex;
 }
 
@@ -72,7 +72,7 @@ body {
 .job-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures equal spacing between cards */
+    justify-content: space-between;
 }
 
 .job-card {
@@ -80,17 +80,17 @@ body {
     border: 1px solid #0e0e0e;
     border-radius: 8px;
     padding: 20px;
-    width: calc(50% - 10px); /* Adjust to fit exactly two cards per row */
+    width: calc(50% - 10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Space below each card */
-    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .job-logo {
-    width: 100px; /* Smaller size for the logo */
-    height: auto; /* Maintains aspect ratio */
+    width: 100px;
+    height: auto;
     margin-bottom: 15px;
 }
 
@@ -240,7 +240,6 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
     margin-bottom: -15px;
-
 }
 
 .footer-bottom a {
@@ -250,4 +249,84 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 0;
+    }
+
+    .job-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .job-card {
+        width: 100%;
+    }
+
+    .all-in-one-place .category {
+        width: 45%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        padding: 8px 15px;
+    }
+
+    .pop-out-box {
+        width: 90%;
+    }
+
+    .all-in-one-place .category {
+        width: 100%;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+        padding: 8px 15px;
+    }
 }

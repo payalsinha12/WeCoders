@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -87,6 +88,7 @@ body {
     margin-bottom: 20px; /* Space below each card */
     box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
+
 .contest-logo {
     width: 100px; /* Smaller size for the logo */
     height: auto; /* Maintains aspect ratio */
@@ -109,6 +111,7 @@ body {
 .contest-card a:hover {
     text-decoration: underline;
 }
+
 .all-in-one-place {
     background-color: #989494;
     border-radius: 8px;
@@ -238,7 +241,6 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
     margin-bottom: -15px;
-
 }
 
 .footer-bottom a {
@@ -248,4 +250,79 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .create-profile-container {
+        flex-direction: column;
+    }
+
+    .profile-content-box {
+        width: 90%;
+    }
+
+    .contest-card {
+        width: 100%; /* Full width for each card on small screens */
+    }
+
+    .all-in-one-place .category {
+        width: 45%; /* Adjust category width for smaller screens */
+        margin-bottom: 1rem;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        padding: 8px 16px;
+    }
+
+    .contest-card {
+        width: 100%; /* Full width for each card on very small screens */
+        padding: 15px;
+    }
+
+    .all-in-one-place .category {
+        width: 100%; /* Full width for categories on very small screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
 }

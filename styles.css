@@ -69,7 +69,6 @@ body {
     text-align: center;
     max-width: 800px;
     z-index: 1;
-    
 }
 
 .hero h1 {
@@ -85,7 +84,6 @@ body {
 .hero p {
     font-size: 24px;
     margin-bottom: 30px;
-    
 }
 
 .register-btn {
@@ -135,6 +133,7 @@ body {
     align-items: center;
     gap: 20px;
     background-color: #3b4499;
+    flex-wrap: wrap; /* Make profile sections responsive */
 }
 
 .profile-editor,
@@ -143,8 +142,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 500px; /* Ensure both sections have the same width */
-    height: 460px; /* Ensure both sections have the same height */
+    width: 500px;
+    height: 460px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -197,15 +196,15 @@ body {
 }
 
 .social-icons .fa-linkedin {
-    color: #0077b5; /* LinkedIn blue */
+    color: #0077b5;
 }
 
 .social-icons .fa-instagram {
-    color: #e4405f; /* Instagram pink */
+    color: #e4405f;
 }
 
 .social-icons .fa-github {
-    color: #5b5757; /* GitHub gray */
+    color: #5b5757;
 }
 
 /* Optional: Add hover effect */
@@ -214,13 +213,12 @@ body {
 }
 
 .stats {
-    color: #fff; /* Ensure text is white for better visibility */
+    color: #fff;
 }
 
 .stats p {
-
     color: #edf0f4;
-    margin-top: -10pxpx;
+    margin-top: -10px;
     margin-bottom: 6px;
 }
 
@@ -229,21 +227,21 @@ body {
 }
 
 .stats .ratings {
-    color: #1e90ff; /* Bright blue for ratings */
+    color: #1e90ff;
     font-weight: bold;
 }
 
 .stats .specialization {
-    color: #6296e4; /* Light blue for specialization */
+    color: #6296e4;
     font-weight: bold;
 }
 
 .stats .stars {
-    color: #e9d357; /* Gold color for stars */
+    color: #e9d357;
 }
 
 .github-stats {
-    color: #edf0f4; /* Ensure text is white for better visibility */
+    color: #edf0f4;
     margin-top: 10px;
 }
 
@@ -259,18 +257,17 @@ body {
 }
 
 .github-stats .pull-req {
-    color: #9d9998; 
-    /* Orange for pull requests */
+    color: #9d9998;
     margin-left: 70px;
 }
 
 .github-stats .issues {
-    color: #9d9998; /* Green for issues */
+    color: #9d9998;
     margin-left: 10px;
 }
 
 .github-stats .commits {
-    color: #9d9998; /* Blue for commits */
+    color: #9d9998;
     margin-right: 70px;
 }
 
@@ -283,15 +280,15 @@ body {
 
 .projects {
     margin-top: 20px;
-    color: #fff; /* Ensure text is white for better visibility */
+    color: #fff;
 }
 
 .projects p {
-    margin: 5px 0; /* Adds spacing between lines */
+    margin: 5px 0;
 }
 
 .projects .projects-title {
-    color: #f1f3f6; /* Bright blue for projects title */
+    color: #f1f3f6;
     margin-top: -20px;
 }
 
@@ -305,7 +302,7 @@ body {
 }
 
 .project-box:hover {
-    background-color: #555; /* Slightly lighter gray on hover */
+    background-color: #555;
 }
 
 .create-btn {
@@ -399,6 +396,7 @@ body {
 .platform-btn:hover {
     background-color: #1c7ed6;
 }
+
 /* Footer styles */
 footer {
     background-color: #000214;
@@ -475,4 +473,122 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 50px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-editor,
+    .profile-preview {
+        width: 90%;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .coding-platforms-section h1 {
+        font-size: 32px;
+    }
+
+    .coding-platforms-section p {
+        font-size: 16px;
+    }
+
+    .platform-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .profile-editor,
+    .profile-preview {
+        width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .coding-platforms-section h1 {
+        font-size: 28px;
+    }
+
+    .coding-platforms-section p {
+        font-size: 14px;
+    }
+
+    .platform-box {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .login-btn, .register-btn, .create-btn, .explore-btn, .platform-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .platform-box {
+        width: 100%;
+        padding: 15px;
+    }
 }

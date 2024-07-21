@@ -79,25 +79,23 @@ body {
     flex: 1;
     overflow: hidden; /* Ensure image doesn't overflow */
 }
+
 .line {
     position: absolute;
     background-color: #000000;
-
 }
 
 .line-horizontal {
     width: 20%;
     height: 2px;
-    bottom: -10;
-    left: 100;
+    bottom: -10px;
+    left: 100px;
     background-color: #000000;
-   
 }
-
 
 .contact-image img {
     width: 100%;
-    height: 100;
+    height: auto; /* Ensure proper aspect ratio */
     object-fit: cover;
 }
 
@@ -233,7 +231,6 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
     margin-bottom: -15px;
-
 }
 
 .footer-bottom a {
@@ -243,4 +240,110 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 50px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Add margin below the image section */
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Add margin below the image section */
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image {
+        margin-bottom: 20px; /* Add margin below the image section */
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
 }

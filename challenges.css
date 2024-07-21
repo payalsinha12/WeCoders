@@ -54,6 +54,7 @@ body {
 .login-btn:hover {
     background-color: #1c7ed6;
 }
+
 /* Challenges Section Styles */
 .challenges-section {
     padding: 20px;
@@ -77,7 +78,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
-    background-color:  #526cb2;
+    background-color: #526cb2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,6 +101,7 @@ body {
 .challenge-card a:hover {
     text-decoration: underline;
 }
+
 /* Footer styles */
 footer {
     background-color: #000214;
@@ -167,7 +169,6 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
     margin-bottom: -15px;
-
 }
 
 .footer-bottom a {
@@ -177,4 +178,85 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 0;
+    }
+
+    .challenge-card {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .challenges-section {
+        padding: 10px;
+    }
+
+    .challenge-card {
+        flex: 1 1 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        padding: 8px 15px;
+    }
+
+    .challenges-section h1 {
+        font-size: 24px;
+    }
+
+    .challenge-card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+        padding: 8px 15px;
+    }
 }

@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000219;
     color: #fff;
-   
 }
 
 .navbar {
@@ -20,13 +19,15 @@ body {
     font-weight: bold;
     color: #fff;
 }
-.about{
+
+.about {
     text-align: center;
     font-size: 30px;
     color: #eaeaea;
     margin-top: 30px;
     margin-bottom: -40px;
 }
+
 .underline {
     width: 50%;
     height: 5px;
@@ -51,7 +52,6 @@ body {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
-   
 }
 
 .navbar ul li a:hover {
@@ -85,13 +85,12 @@ body {
     overflow-y: auto;
 }
 
-
-
 .contact-right img {
     max-width: 100%;
     max-height: 100%; /* Ensures the image doesn't overflow the container */
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
 .interactive-line {
     margin: 10px 0;
     cursor: pointer;
@@ -139,7 +138,6 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-   
 }
 
 .footer-logo img {
@@ -193,4 +191,117 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 0;
+    }
+
+    .underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 60px; /* Adjust if needed */
+    }
+
+    .contact-left, .contact-right {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .about {
+        font-size: 24px;
+    }
+
+    .underline {
+        width: 70%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .contact-left {
+        padding: 15px;
+    }
+
+    .contact-right img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        padding: 8px 15px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .underline {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-container {
+        margin-top: 50px;
+    }
+
+    .contact-left {
+        padding: 10px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+
+    .footer-buttons .footer-star-btn, .footer-buttons .footer-netlify-btn {
+        padding: 8px 15px;
+    }
 }

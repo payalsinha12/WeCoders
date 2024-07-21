@@ -1,3 +1,4 @@
+/* General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -240,7 +241,6 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #eaeaea;
     margin-bottom: -15px;
-
 }
 
 .footer-bottom a {
@@ -250,4 +250,106 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .navbar ul {
+        margin-left: 50px;
+    }
+
+    .all-in-one-place .category {
+        width: 22%; /* Adjust width for medium screens */
+    }
+
+    .internship-card {
+        width: calc(50% - 10px); /* Adjust width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .all-in-one-place .categories {
+        flex-direction: column;
+    }
+
+    .all-in-one-place .category {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .internship-card {
+        width: calc(100% - 20px); /* Full width for smaller screens */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin: 10px 0;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .all-in-one-place {
+        padding: 1rem;
+    }
+
+    .all-in-one-place .category {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .internship-card {
+        width: calc(100% - 20px); /* Full width for very small screens */
+        padding: 10px;
+    }
+
+    .internship-logo {
+        width: 80px; /* Smaller logo for small screens */
+    }
+
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 60px;
+    }
 }
