@@ -91,6 +91,8 @@ body {
     bottom: -10px;
     left: 100px;
     background-color: #000000;
+    margin-left: 60px;
+    margin-bottom: 40px;
 }
 
 .contact-image img {
