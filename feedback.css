@@ -85,6 +85,7 @@ main {
     flex: 2;
     color: #ddd;
     max-width: 100%; /* Ensures form section fits within its container */
+
 }
 
 h1 {
@@ -117,7 +118,7 @@ input:checked ~ label {
 }
 
 textarea, input[type=email] {
-    width: 100%; /* Adjust width for smaller screens */
+    width: 50%; /* Adjust width for smaller screens */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;

@@ -85,6 +85,18 @@ body {
     background-color: #000000;
 }
 
+<<<<<<< HEAD
+=======
+.line-horizontal {
+    width: 20%;
+    height: 2px;
+    bottom: -10px;
+    left: 100px;
+    background-color: #000000;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+>>>>>>> 0e3a8d1a45653fa536900cedef67adfa337eda03
 .contact-image img {
     width: 100%;
     height: auto; /* Ensure proper aspect ratio */
